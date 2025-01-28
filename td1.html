@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TD n°1 Programmation web – Application météo</title>
+        <link rel="stylesheet" type="text/css" href="td1.css">
+        <script src="td1.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>TD n°1 Programmation web – Application météo</h3>
+        </header>
+        <div style="text-align: center; padding: 20px;">
+            <label for="nomVilleChoisie">Choisissez une ville :</label>
+            <select id="nomVilleChoisie" onchange="afficheVille()">
+                <option value="Niort">Niort</option>
+                <option value="Rio">Rio de Janeiro</option>
+                <option value="Reykjavik">Reykjavik</option>
+            </select>
+        </div>
+        <div class="container">
+            <div class="city" id="Niort">
+                <h2>Niort</h2>
+                <p>12°, pluvieux</p>
+                <img src="pluvieux.png" alt="Pluvieux"/>
+            </div>
+            <div class="city" id="Rio">
+                <h2>Rio de Janeiro</h2>
+                <p>29°, orageux</p>
+                <img src="orageux.png" alt="Orageux"/>
+            </div>
+            <div class="city" id="Reykjavik">
+                <h2>Reykjavik</h2>
+                <p>-10°, ensoleillé</p>
+                <img src="ensoleille.png" alt="Ensoleillé"/>
+            </div>
+        </div>
+        <footer>
+            <h5>Dawei ZHOU</h5>
+            <a href="https://thenounproject.com">https://thenounproject.com</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.city {
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    text-align: center;
+    display: none;
+}
+.city img {
+    width: 50px;
+}
+footer {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 600px) {
+    .city {
+        flex: 1 1 100%;
+    }
+}
